@@ -1,1 +1,1 @@
-# diff-gaussian-rasterization
+# change for GOF
