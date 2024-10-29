@@ -1,0 +1,10 @@
+# ninja log v5
+0	2401	1729679508349101934	/root/autodl-tmp/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/backward.o	8f30fd771792cc01
+1	2636	1729679508585099594	/root/autodl-tmp/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/forward.o	7c009a9453ee6c64
+1	9533	1729679515481031230	/root/autodl-tmp/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/rasterizer_impl.o	feed3a022a3b0167
+1	25434	1729679531360873802	/root/autodl-tmp/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/ext.o	9614d04cfe9a19d0
+2	61781	1729679567724513303	/root/autodl-tmp/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/rasterize_points.o	25802f41f2cc4c79
+34	2794	1729743649472731348	/root/autodl-tmp/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/forward.o	7c009a9453ee6c64
+34	9599	1729743656272663936	/root/autodl-tmp/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/rasterizer_impl.o	feed3a022a3b0167
+35	25331	1729743671992508094	/root/autodl-tmp/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/ext.o	9614d04cfe9a19d0
+35	59782	1729743706452166470	/root/autodl-tmp/gaussian-opacity-fields/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/rasterize_points.o	25802f41f2cc4c79
