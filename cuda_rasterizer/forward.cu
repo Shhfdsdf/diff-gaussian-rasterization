@@ -15,6 +15,7 @@
 #include <cooperative_groups/reduce.h>
 namespace cg = cooperative_groups;
 
+
 // Forward method for converting the input spherical harmonics
 // coefficients of each Gaussian to a simple RGB color.
 __device__ glm::vec3 computeColorFromSH(int idx, int deg, int max_coeffs, const glm::vec3* means, glm::vec3 campos, const float* shs, bool* clamped)
@@ -326,6 +327,10 @@ __global__ void preprocessCUDA(int P, int D, int M,
 
 	// Transform point by projecting
 	float3 p_orig = { orig_points[3 * idx], orig_points[3 * idx + 1], orig_points[3 * idx + 2] };
+    
+   
+    
+    
 	float4 p_hom = transformPoint4x4(p_orig, projmatrix);
 	float p_w = 1.0f / (p_hom.w + 0.0000001f);
 	float3 p_proj = { p_hom.x * p_w, p_hom.y * p_w, p_hom.z * p_w };
@@ -518,7 +523,7 @@ renderCUDA(
 			// t is the depth of the gaussian
 			float t = -BB/(2*AA);
 			// depth must be positive otherwise it is not valid and we skip it
-			if (t <= NEAR_PLANE)
+			if (t <= NEAR_PLANE || t>= 300.0)
 				continue;
 
 			// the scale of the gaussian is 1.f / sqrt(AA)
